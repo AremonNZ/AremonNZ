@@ -1,6 +1,6 @@
 Hi, I'm Arman 👋
 
-🎓 Third-Year Data Science Student @ Auckland University of Technology
+🎓 Final-year Computer Science (Data Science) Student @ Auckland University of Technology
 📍 Auckland, New Zealand
 
 ## 🧠 About Me
@@ -12,29 +12,36 @@ I'm a data science student focused on building practical machine learning models
 * **Programming:** Python, SQL, R, Java, C/C++
 * **Libraries:** Pandas, NumPy, Scikit-learn
 * **Machine Learning:** Classification & Regression (KNN, Decision Trees, MLP, Logistic Regression, Random Forest, Gradient Boosting)
-* **Data Analysis & Visualization:** Matplotlib, Seaborn, Tableau, Power BI
+* **Data Analysis & Visualization:** Matplotlib, Seaborn, Tableau, Power BI (DAX, Power Query)
 * **Databases:** SQL (queries, joins, window functions, CTEs)
 * **Tools (learning):** Streamlit
 
 ## 🚀 Featured Projects
 
+### 📊 Automobile Market Dashboard (Power BI)
+Interactive two-page Power BI report on price, performance and fuel efficiency of 205 cars.
+* Star-schema data model with 13 documented DAX measures, including a Pearson correlation calculated in DAX
+* Power Query cleaning with a parameterised data source, saved in PBIP format so every measure is readable on GitHub
+👉 [View Project](https://github.com/AremonNZ/automobile-market-dashboard)
+
 ### 🍄 Mushroom Classification
 Machine learning project comparing KNN and Decision Tree models on 61K samples.
-* Achieved 99.98% accuracy using KNN
+* Achieved 99.93% test accuracy using KNN, confirmed by 5-fold cross-validation (99.89%)
+* Found and fixed a data-ordering bug that made cross-validation look like 52%
 * Focused on feature importance and model comparison
 👉 [View Project](https://github.com/AremonNZ/mushroom-classification)
 
 ### 🎗️ Breast Cancer Classification
 Classification of tumors using Logistic Regression and MLP neural networks.
-* Achieved 97%+ accuracy
-* Focused on model evaluation and medical risk interpretation
+* Both models reached 97.66% test accuracy (98% in 10-fold cross-validation), so the simpler Logistic Regression was preferred
+* Focused on medical risk: analysed the false negatives (missed malignant tumours) rather than accuracy alone
 👉 [View Project](https://github.com/AremonNZ/breast-cancer-ml-classification)
 
 ### 🚗 Car Market Data Exploration (EDA)
 Exploratory data analysis on car market data to uncover pricing trends and patterns.
 * Applied data cleaning, outlier detection, and correlation analysis
 * Produced visual insights to support data-driven conclusions
-👉 [View Project](https://github.com/AremonNZ/car-market-eda)
+👉 [View Project](https://github.com/AremonNZ/Automobile-Data-Analysis-EDA-)
 
 ### 🏠 House Price Prediction
 Regression project predicting house sale prices using the Ames Housing dataset.
@@ -43,9 +50,9 @@ Regression project predicting house sale prices using the Ames Housing dataset.
 👉 [View Project](https://github.com/AremonNZ/house-price-prediction)
 
 ### 🏥 Medical Appointment No-Shows (SQL)
-SQL-based analysis of 5,500 patient appointments to identify what predicts no-shows.
+SQL-based analysis of 110,527 real patient appointments to identify what predicts no-shows.
 * Used GROUP BY, CASE WHEN, window functions, and CTEs
-* Found that SMS reminders and shorter wait times significantly reduce no-shows
+* Found that waiting time is the strongest predictor (5% no-shows same day vs 33% at 30+ days), and showed the apparent SMS-reminder effect is confounded by wait time
 👉 [View Project](https://github.com/AremonNZ/medical-appointment-noshow-sql)
 
 ## 📈 Currently Working On
