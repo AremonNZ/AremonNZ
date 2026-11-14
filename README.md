@@ -5,16 +5,27 @@ Hi, I'm Arman 👋
 
 ## 🧠 About Me
 
-I'm a data science student focused on building practical machine learning models and data-driven solutions. I enjoy working on real-world datasets, exploring patterns, and turning data into meaningful insights.
+I'm a data science student who likes building practical things: machine learning models, SQL analysis, dashboards, and, through my capstone, an LLM agent that controls a robot. I care about honest evaluation: checking for leakage, explaining what the numbers really mean, and writing up the bugs I find.
 
 ## 🔧 Skills
 
-* **Programming:** Python, SQL, R, Java, C/C++
-* **Libraries:** Pandas, NumPy, Scikit-learn
-* **Machine Learning:** Classification & Regression (KNN, Decision Trees, MLP, Logistic Regression, Random Forest, Gradient Boosting)
-* **Data Analysis & Visualization:** Matplotlib, Seaborn, Tableau, Power BI (DAX, Power Query)
-* **Databases:** SQL (queries, joins, window functions, CTEs)
-* **Tools (learning):** Streamlit
+* **Programming:** Python, SQL · coursework in R, Java and C
+* **Libraries:** pandas, NumPy, scikit-learn, Matplotlib, Seaborn
+* **Machine Learning:** Logistic Regression, MLP neural networks, KNN, Decision Trees · cross-validation, ROC/AUC, leakage-safe preprocessing
+* **Applied AI:** LLM agents with tool calling (capstone), AI coding assistants in a pull-request review workflow
+* **Data & BI:** Power BI (DAX, Power Query, star-schema modelling), exploratory data analysis
+* **Databases:** SQL (joins, window functions, CTEs), SQLite, Firebase / Firestore
+* **Tools:** Git & GitHub, Linux, Jupyter · learning Streamlit
+
+## 🤖 Applied AI Capstone: LLM Agents for Robots
+
+Team project at AUT with an industry client (code is private). A fine-tuned language model, served locally through Ollama, turns typed or spoken commands into a fixed set of validated tool calls for a Unitree Go2 quadruped robot. A safety executor enforces speed, distance and turn limits, so the model never sends raw motor commands. The system is developed in a MuJoCo simulation before running on the real robot.
+
+**My part:**
+* **Scrum Master:** ran sprints and meetings, the risk register and status reports, and communication with our supervisor and the client
+* **Feedback store:** built the feature that copies user-flagged agent replies to Firebase Firestore (Python module, security rules and tests)
+* **Simulation setup:** got the MuJoCo simulation and walking policy running on Windows and Linux for the team
+* **AI-assisted development:** directed Claude Code to build person-following and ledge/stall protection, reviewed the output and took it through teammate code review
 
 ## 🚀 Featured Projects
 
@@ -37,23 +48,17 @@ Classification of tumors using Logistic Regression and MLP neural networks.
 * Focused on medical risk: analysed the false negatives (missed malignant tumours) rather than accuracy alone
 👉 [View Project](https://github.com/AremonNZ/breast-cancer-ml-classification)
 
-### 🚗 Car Market Data Exploration (EDA)
-Exploratory data analysis on car market data to uncover pricing trends and patterns.
-* Applied data cleaning, outlier detection, and correlation analysis
-* Produced visual insights to support data-driven conclusions
-👉 [View Project](https://github.com/AremonNZ/Automobile-Data-Analysis-EDA-)
-
-### 🏠 House Price Prediction
-Regression project predicting house sale prices using the Ames Housing dataset.
-* Compared 5 models — Linear, Ridge, Lasso, Random Forest, Gradient Boosting
-* Engineered features like total square footage and house age to improve accuracy
-👉 [View Project](https://github.com/AremonNZ/house-price-prediction)
-
 ### 🏥 Medical Appointment No-Shows (SQL)
 SQL-based analysis of 110,527 real patient appointments to identify what predicts no-shows.
 * Used GROUP BY, CASE WHEN, window functions, and CTEs
 * Found that waiting time is the strongest predictor (5% no-shows same day vs 33% at 30+ days), and showed the apparent SMS-reminder effect is confounded by wait time
 👉 [View Project](https://github.com/AremonNZ/medical-appointment-noshow-sql)
+
+### 🚗 Car Market Data Exploration (EDA)
+Exploratory data analysis on car market data to uncover pricing trends and patterns.
+* Applied data cleaning, outlier detection, and correlation analysis
+* Produced visual insights to support data-driven conclusions
+👉 [View Project](https://github.com/AremonNZ/Automobile-Data-Analysis-EDA-)
 
 ## 📈 Currently Working On
 
@@ -63,7 +68,7 @@ SQL-based analysis of 110,527 real patient appointments to identify what predict
 
 ## 🎯 Goals
 
-* Secure a Data Science / Data Analyst internship
+* Secure a Data Science / Data Analyst internship or graduate role
 * Build production-ready data projects
 * Improve real-world problem solving with data
 
